@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { UserProvider } from './contexts/user.contexts';
 import { ProductProvider } from './contexts/products.contexts';
+import { CartProvider } from './contexts/cart.contexts';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 import './index.scss';
-import { CartProvider } from './contexts/cart.contexts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,5 +22,3 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-reportWebVitals();
