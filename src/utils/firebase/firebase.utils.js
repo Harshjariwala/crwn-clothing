@@ -3,12 +3,12 @@ import { getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider, creat
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDDUCuuzD51t56Lw0IIkMXnVY5CHA5jbxk",
-  authDomain: "crwn-clothing-db-4b17c.firebaseapp.com",
-  projectId: "crwn-clothing-db-4b17c",
-  storageBucket: "crwn-clothing-db-4b17c.appspot.com",
-  messagingSenderId: "989026908463",
-  appId: "1:989026908463:web:b487f026a5bc4e03b749da"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
