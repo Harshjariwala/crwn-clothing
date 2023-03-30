@@ -1,10 +1,11 @@
 .checkout-container {
-    width: 55%;
+    width: 100%;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px auto 0;
+    padding: 0 16px;
   
     .checkout-header {
       width: 100%;
