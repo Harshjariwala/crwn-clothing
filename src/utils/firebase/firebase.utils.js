@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 import { getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
@@ -11,8 +12,9 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID
 };
 
-// Initialize Firebase
-initializeApp(firebaseConfig);
+// Initialize Firebase & Analytics
+const app = initializeApp(firebaseConfig);
+getAnalytics(app);
 
 const googleProvider = new GoogleAuthProvider();
 
